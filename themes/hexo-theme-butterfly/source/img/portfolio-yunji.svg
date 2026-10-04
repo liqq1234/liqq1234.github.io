@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="yunjiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#27272a" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <filter id="purpleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#9333ea" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="600" height="500" rx="28" fill="url(#yunjiBg)"/>
+
+  <!-- Waveform Animation Lines in Background -->
+  <g opacity="0.15" stroke="#a1a1aa" stroke-width="1.5">
+    <path d="M50 250 Q 150 150 250 250 T 450 250 T 550 250" fill="none"/>
+    <path d="M50 250 Q 150 330 250 250 T 450 250 T 550 250" fill="none"/>
+    <path d="M50 250 Q 200 120 350 250 T 550 250" fill="none"/>
+  </g>
+
+  <!-- Central Mobile Phone Frame -->
+  <g transform="translate(190, 70)" filter="url(#purpleGlow)">
+    <rect width="220" height="360" rx="32" fill="#09090b" stroke="#3f3f46" stroke-width="3"/>
+    <!-- Phone Screen -->
+    <rect x="12" y="14" width="196" height="332" rx="22" fill="#18181b"/>
+    <!-- Speaker Notch -->
+    <rect x="80" y="22" width="60" height="5" rx="2.5" fill="#3f3f46"/>
+
+    <!-- SiriWave Voice Waveform Inside Phone -->
+    <g transform="translate(110, 110)">
+      <circle r="36" fill="url(#purpleGrad)" opacity="0.2"/>
+      <circle r="26" fill="url(#purpleGrad)" opacity="0.8"/>
+      <!-- Mic Icon -->
+      <path d="M-6 -10 C-6 -14 6 -14 6 -10 L6 0 C6 4 -6 4 -6 0 Z" fill="#ffffff"/>
+      <path d="M-10 -2 C-10 6 10 6 10 -2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="6" x2="0" y2="12" stroke="#ffffff" stroke-width="2"/>
+    </g>
+
+    <!-- Transcribed Note Card Inside Phone -->
+    <g transform="translate(24, 180)">
+      <rect width="172" height="70" rx="10" fill="#27272a" stroke="#52525b" stroke-width="1"/>
+      <rect x="12" y="14" width="90" height="8" rx="4" fill="#a1a1aa"/>
+      <rect x="12" y="30" width="148" height="6" rx="3" fill="#71717a"/>
+      <rect x="12" y="44" width="120" height="6" rx="3" fill="#71717a"/>
+    </g>
+
+    <!-- AI Summary & Action Items Card -->
+    <g transform="translate(24, 265)">
+      <rect width="172" height="65" rx="10" fill="#3b0764" fill-opacity="0.5" stroke="#9333ea" stroke-width="1.2"/>
+      <text x="12" y="20" fill="#c084fc" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">✨ AI 结构化纪要</text>
+      <text x="12" y="38" fill="#e4e4e7" font-family="'Segoe UI', Roboto, sans-serif" font-size="10">• 待办自动生成</text>
+      <text x="12" y="52" fill="#e4e4e7" font-family="'Segoe UI', Roboto, sans-serif" font-size="10">• 智能思维导图</text>
+    </g>
+  </g>
+
+  <!-- Floating Badges Outside Phone -->
+  <!-- Left Badge: DM8 DB -->
+  <g transform="translate(85, 230)">
+    <rect x="-45" y="-18" width="90" height="36" rx="18" fill="#18181b" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="0" y="5" fill="#f4f4f5" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">达梦 DM8</text>
+  </g>
+
+  <!-- Right Badge: Dual ASR -->
+  <g transform="translate(515, 210)">
+    <rect x="-55" y="-18" width="110" height="36" rx="18" fill="#18181b" stroke="#c084fc" stroke-width="1.5"/>
+    <text x="0" y="5" fill="#f4f4f5" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">双轨 ASR 引擎</text>
+  </g>
+
+  <!-- Right Badge: Mindmap -->
+  <g transform="translate(500, 310)">
+    <rect x="-50" y="-18" width="100" height="36" rx="18" fill="#18181b" stroke="#fb7185" stroke-width="1.5"/>
+    <text x="0" y="5" fill="#f4f4f5" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Vue3 导图</text>
+  </g>
+
+  <!-- Top Title Badge -->
+  <g transform="translate(300, 42)">
+    <rect x="-80" y="-14" width="160" height="28" rx="14" fill="#581c87" fill-opacity="0.4" stroke="#c084fc" stroke-width="1.2"/>
+    <text x="0" y="5" fill="#c084fc" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">CLOUD NOTE AI</text>
+  </g>
+</svg>

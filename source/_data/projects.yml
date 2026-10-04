@@ -1,0 +1,25 @@
+- title: MuseLib：企业级 Agentic RAG 智能知识库检索系统
+  subtitle: 2024.03 - 2024.08 · 核心架构与后端研发
+  description: 面向复杂图书与专业知识库场景的下一代智能问答检索系统，基于大语言模型与 Agent 编排构建。
+  highlights:
+    - 针对大模型单点 API 故障与幻觉问题，设计模型高可用容灾与重试降级策略，保障问答链路 99.9% 稳定可用。
+    - 引入问题重写（Query Rewriting）、多路召回（向量相似度 + BM25 关键词）与重排序（Rerank）机制，将检索 Top-3 召回准确率提升至 92% 以上。
+    - 自主设计全链路可观测性 Trace 切面（@RagTraceRoot / @RagTraceNode），打通黑盒思考耗时诊断，实现毫秒级瓶颈定位。
+    - 结合动态意图识别（Intent Recognition）与对话记忆压缩，大幅降低无效 Token 消耗并显著提升多轮交互体验。
+  link: /2025/02/27/aliyun-bailian-knowledge-base/
+  button_text: More
+  image: /img/portfolio-muselib.svg
+  tag: Agentic RAG · 向量检索 · 智能知识库
+
+- title: 云记：AI 驱动的智能语音转写与会议纪要中台
+  subtitle: 2024.09 - 2026.04 · 星乾科技实习研发
+  description: 集高精度流式语音识别、会议长音频智能提炼总结、思维导图自动生成于一体的智能语音协同微服务平台。
+  highlights:
+    - 整合讯飞语音与阿里通义千问双轨 ASR 引擎，构建实时 PCM 音频流式分块转写与服务端低延迟长连接管道。
+    - 基于 LLM 提示词工程深度研发智能会议纪要模块，自动提取行动待办项（Action Items）并结构化生成交互式思维导图。
+    - 服务端基于国产达梦数据库（DM8）与 Spring Boot 微服务架构设计，构建严格的增量迁移规范与敏感数据加密脱敏管道。
+    - 前端配合 Vue3 响应式设计、手写涂鸦板与波形可视化（SiriWave），打造全端一致的流畅录音与文档交互体验。
+  link: /archives/
+  button_text: More
+  image: /img/portfolio-yunji.svg
+  tag: 语音识别 ASR · 大模型总结 · 达梦数据库 · 微服务
