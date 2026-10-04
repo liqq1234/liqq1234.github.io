@@ -1,104 +1,116 @@
-#body-wrap.type-portfolio
-  #content-inner.layout
+// Reset and expand homepage layout to 100% full bleed width
+#body-wrap.page-home,
+#body-wrap.type-portfolio,
+.portfolio-home
+  #content-inner.layout,
+  &.layout
     max-width: 100% !important
     width: 100% !important
     padding: 0 !important
     margin: 0 !important
 
-    & > div:first-child
+    & > div:first-child,
+    & > #portfolio-showcase
       width: 100% !important
+      max-width: 100% !important
       padding: 0 !important
-      box-shadow: none !important
+      margin: 0 !important
       background: transparent !important
+      box-shadow: none !important
+      border-radius: 0 !important
 
-.portfolio-showcase
-  width: 100%
-  margin: 0
-  padding: 0
+#portfolio-showcase
+  width: 100% !important
+  max-width: 100% !important
+  margin: 0 !important
+  padding: 0 !important
+  background: transparent !important
+  box-shadow: none !important
+  border-radius: 0 !important
 
 .portfolio-section
-  width: 100%
+  width: 100% !important
   min-height: 85vh
   display: flex
   align-items: center
   justify-content: center
-  padding: 90px 0
+  padding: 100px 0
   position: relative
   box-sizing: border-box
 
   &.section-theme-0
-    background-color: #928b80
-    color: #ffffff
+    background-color: #928b80 !important
+    color: #ffffff !important
 
     .portfolio-tag
-      background: rgba(255, 255, 255, 0.18)
-      color: #ffffff
-      border: 1px solid rgba(255, 255, 255, 0.3)
+      background: rgba(255, 255, 255, 0.18) !important
+      color: #ffffff !important
+      border: 1px solid rgba(255, 255, 255, 0.35) !important
 
     .portfolio-title
-      color: #ffffff
+      color: #ffffff !important
 
     .portfolio-subtitle
-      color: rgba(255, 255, 255, 0.85)
+      color: rgba(255, 255, 255, 0.85) !important
 
     .portfolio-desc
-      color: rgba(255, 255, 255, 0.92)
+      color: rgba(255, 255, 255, 0.92) !important
 
     .portfolio-highlights li
-      color: rgba(255, 255, 255, 0.92)
+      color: rgba(255, 255, 255, 0.92) !important
 
     .portfolio-btn
-      border-color: rgba(255, 255, 255, 0.85)
+      border: 1.5px solid rgba(255, 255, 255, 0.85) !important
       color: #ffffff !important
-      background: rgba(255, 255, 255, 0.12)
+      background: rgba(255, 255, 255, 0.12) !important
 
       &:hover
-        background: #ffffff
+        background: #ffffff !important
         color: #2c2926 !important
-        border-color: #ffffff
+        border-color: #ffffff !important
 
   &.section-theme-1
-    background-color: #242933
-    color: #ffffff
+    background-color: #242933 !important
+    color: #ffffff !important
 
     .portfolio-tag
-      background: rgba(192, 132, 252, 0.18)
-      color: #c084fc
-      border: 1px solid rgba(192, 132, 252, 0.35)
+      background: rgba(192, 132, 252, 0.2) !important
+      color: #c084fc !important
+      border: 1px solid rgba(192, 132, 252, 0.4) !important
 
     .portfolio-title
-      color: #ffffff
+      color: #ffffff !important
 
     .portfolio-subtitle
-      color: rgba(255, 255, 255, 0.8)
+      color: rgba(255, 255, 255, 0.8) !important
 
     .portfolio-desc
-      color: rgba(255, 255, 255, 0.9)
+      color: rgba(255, 255, 255, 0.9) !important
 
     .portfolio-highlights li
-      color: rgba(255, 255, 255, 0.92)
+      color: rgba(255, 255, 255, 0.92) !important
 
     .portfolio-btn
-      border-color: rgba(255, 255, 255, 0.8)
+      border: 1.5px solid rgba(255, 255, 255, 0.8) !important
       color: #ffffff !important
-      background: rgba(255, 255, 255, 0.1)
+      background: rgba(255, 255, 255, 0.1) !important
 
       &:hover
-        background: #ffffff
+        background: #ffffff !important
         color: #1a1e24 !important
-        border-color: #ffffff
+        border-color: #ffffff !important
 
 .portfolio-container
-  width: 90%
-  max-width: 1400px
-  margin: 0 auto
-  display: flex
-  align-items: center
-  justify-content: space-between
-  gap: 70px
+  width: 90% !important
+  max-width: 1400px !important
+  margin: 0 auto !important
+  display: flex !important
+  align-items: center !important
+  justify-content: space-between !important
+  gap: 80px !important
 
 .portfolio-container.portfolio-reverse
-  flex-direction: row-reverse
+  flex-direction: row-reverse !important
 
 .portfolio-content
   flex: 1.2
@@ -182,10 +194,11 @@
   display: block
 
 .portfolio-footer-section
-  width: 100%
+  width: 100% !important
   background: var(--card-bg)
   padding: 80px 20px
   text-align: center
+  box-sizing: border-box
 
 .portfolio-footer-container
   max-width: 700px
@@ -224,9 +237,9 @@
     padding: 60px 0
 
   .portfolio-container
-    width: 92%
+    width: 92% !important
     flex-direction: column-reverse !important
-    gap: 40px
+    gap: 40px !important
 
   .portfolio-title
     font-size: 28px

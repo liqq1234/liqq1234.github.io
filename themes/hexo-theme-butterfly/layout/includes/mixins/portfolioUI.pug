@@ -1,5 +1,5 @@
 mixin portfolioUI()
-  #portfolio-showcase.portfolio-showcase
+  #portfolio-showcase.portfolio-showcase.nc
     if site.data.projects && site.data.projects.length
       each project, index in site.data.projects
         section.portfolio-section(class=`section-theme-${index % 2}`)
