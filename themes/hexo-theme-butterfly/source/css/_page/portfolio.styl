@@ -38,67 +38,73 @@
   position: relative
   box-sizing: border-box
 
+  // Section 1: Deep Tech Sapphire / Slate Gradient with ambient blue glow
   &.section-theme-0
-    background-color: #928b80 !important
+    background: radial-gradient(circle at 82% 25%, rgba(14, 165, 233, 0.18) 0%, transparent 45%), linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #080d16 100%) !important
     color: #ffffff !important
 
     .portfolio-tag
-      background: rgba(255, 255, 255, 0.18) !important
-      color: #ffffff !important
-      border: 1px solid rgba(255, 255, 255, 0.35) !important
+      background: rgba(56, 189, 248, 0.18) !important
+      color: #38bdf8 !important
+      border: 1px solid rgba(56, 189, 248, 0.35) !important
 
     .portfolio-title
       color: #ffffff !important
 
     .portfolio-subtitle
-      color: rgba(255, 255, 255, 0.85) !important
+      color: rgba(226, 232, 240, 0.8) !important
 
     .portfolio-desc
-      color: rgba(255, 255, 255, 0.92) !important
+      color: rgba(241, 245, 249, 0.92) !important
 
     .portfolio-highlights li
-      color: rgba(255, 255, 255, 0.92) !important
+      color: rgba(226, 232, 240, 0.9) !important
 
     .portfolio-btn
-      border: 1.5px solid rgba(255, 255, 255, 0.85) !important
+      border: 1.5px solid rgba(255, 255, 255, 0.3) !important
       color: #ffffff !important
-      background: rgba(255, 255, 255, 0.12) !important
+      background: rgba(255, 255, 255, 0.08) !important
+      backdrop-filter: blur(8px)
 
       &:hover
         background: #ffffff !important
-        color: #2c2926 !important
+        color: #0f172a !important
         border-color: #ffffff !important
+        box-shadow: 0 8px 24px rgba(56, 189, 248, 0.3) !important
 
+  // Section 2: Deep Obsidian & Amethyst Gradient with ambient purple glow
   &.section-theme-1
-    background-color: #242933 !important
+    background: radial-gradient(circle at 18% 75%, rgba(168, 85, 247, 0.18) 0%, transparent 45%), linear-gradient(135deg, #181528 0%, #0f0d1a 50%, #07050d 100%) !important
     color: #ffffff !important
 
     .portfolio-tag
-      background: rgba(192, 132, 252, 0.2) !important
+      background: rgba(192, 132, 252, 0.18) !important
       color: #c084fc !important
-      border: 1px solid rgba(192, 132, 252, 0.4) !important
+      border: 1px solid rgba(192, 132, 252, 0.35) !important
 
     .portfolio-title
       color: #ffffff !important
 
     .portfolio-subtitle
-      color: rgba(255, 255, 255, 0.8) !important
+      color: rgba(244, 244, 245, 0.8) !important
 
     .portfolio-desc
-      color: rgba(255, 255, 255, 0.9) !important
+      color: rgba(244, 244, 245, 0.92) !important
 
     .portfolio-highlights li
-      color: rgba(255, 255, 255, 0.92) !important
+      color: rgba(228, 228, 231, 0.9) !important
 
     .portfolio-btn
-      border: 1.5px solid rgba(255, 255, 255, 0.8) !important
+      border: 1.5px solid rgba(255, 255, 255, 0.3) !important
       color: #ffffff !important
-      background: rgba(255, 255, 255, 0.1) !important
+      background: rgba(255, 255, 255, 0.08) !important
+      backdrop-filter: blur(8px)
 
       &:hover
         background: #ffffff !important
-        color: #1a1e24 !important
+        color: #0f0d1a !important
         border-color: #ffffff !important
+        box-shadow: 0 8px 24px rgba(168, 85, 247, 0.3) !important
 
 .portfolio-container
   width: 90% !important
@@ -168,7 +174,6 @@
 
   &:hover
     transform: translateY(-2px)
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25)
 
 .portfolio-visual
   flex: 1
@@ -181,12 +186,12 @@
   max-width: 520px
   border-radius: 20px
   overflow: hidden
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35)
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45)
   transition: transform 0.4s ease, box-shadow 0.4s ease
 
   &:hover
     transform: translateY(-8px) scale(1.015)
-    box-shadow: 0 32px 75px rgba(0, 0, 0, 0.45)
+    box-shadow: 0 32px 75px rgba(0, 0, 0, 0.6)
 
 .portfolio-img
   width: 100%
@@ -195,10 +200,11 @@
 
 .portfolio-footer-section
   width: 100% !important
-  background: var(--card-bg)
-  padding: 80px 20px
+  background: linear-gradient(180deg, #07050d 0%, #030406 100%) !important
+  padding: 90px 20px
   text-align: center
   box-sizing: border-box
+  border-top: 1px solid rgba(255, 255, 255, 0.06)
 
 .portfolio-footer-container
   max-width: 700px
@@ -207,18 +213,17 @@
 .footer-banner-title
   font-size: 26px
   font-weight: 700
-  color: var(--font-color)
+  color: #ffffff !important
   margin-bottom: 10px
 
 .footer-banner-desc
   font-size: 15px
-  color: var(--font-color)
-  opacity: 0.75
-  margin-bottom: 26px
+  color: rgba(255, 255, 255, 0.75) !important
+  margin-bottom: 28px
 
 .footer-banner-btn
   display: inline-block
-  padding: 12px 36px
+  padding: 12px 38px
   font-size: 15px
   font-weight: 600
   border-radius: 30px
@@ -229,7 +234,7 @@
 
   &:hover
     transform: translateY(-3px)
-    box-shadow: 0 10px 25px rgba(73, 177, 245, 0.4)
+    box-shadow: 0 10px 25px rgba(73, 177, 245, 0.45)
 
 @media screen and (max-width: 1024px)
   .portfolio-section
