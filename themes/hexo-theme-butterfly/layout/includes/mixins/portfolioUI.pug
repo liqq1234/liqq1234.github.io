@@ -2,29 +2,30 @@ mixin portfolioUI()
   #portfolio-showcase.portfolio-showcase
     if site.data.projects && site.data.projects.length
       each project, index in site.data.projects
-        .portfolio-item(class=index % 2 === 1 ? 'portfolio-reverse' : '')
-          .portfolio-content
-            if project.tag
-              span.portfolio-tag= project.tag
-            h2.portfolio-title= project.title
-            if project.subtitle
-              .portfolio-subtitle= project.subtitle
-            if project.description
-              p.portfolio-desc= project.description
-            if project.highlights && project.highlights.length
-              ul.portfolio-highlights
-                each hl in project.highlights
-                  li= hl
-            if project.link
-              .portfolio-actions
-                a.portfolio-btn(href=url_for(project.link))= project.button_text || 'More'
-          .portfolio-visual
-            if project.image
-              .portfolio-img-box
-                img.portfolio-img(src=url_for(project.image) alt=project.title)
+        section.portfolio-section(class=`section-theme-${index % 2}`)
+          .portfolio-container(class=index % 2 === 1 ? 'portfolio-reverse' : '')
+            .portfolio-content
+              if project.tag
+                span.portfolio-tag= project.tag
+              h2.portfolio-title= project.title
+              if project.subtitle
+                .portfolio-subtitle= project.subtitle
+              if project.description
+                p.portfolio-desc= project.description
+              if project.highlights && project.highlights.length
+                ul.portfolio-highlights
+                  each hl in project.highlights
+                    li= hl
+              if project.link
+                .portfolio-actions
+                  a.portfolio-btn(href=url_for(project.link))= project.button_text || 'More'
+            .portfolio-visual
+              if project.image
+                .portfolio-img-box
+                  img.portfolio-img(src=url_for(project.image) alt=project.title)
 
-    .portfolio-footer-banner
-      .footer-banner-inner
+    section.portfolio-footer-section
+      .portfolio-footer-container
         h3.footer-banner-title 查阅更多技术复盘与生活随笔
         p.footer-banner-desc 欢迎访问我的技术博客文章与日常随想归档
         a.footer-banner-btn(href=url_for('/archives/')) 前往全部博客归档 →
