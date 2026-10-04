@@ -47,24 +47,20 @@ header#page-header(class=`${headerClassName + isFixedClass}` style=bg_img)
           a.index-btn(href='https://github.com/liqq1234' target='_blank')
             i.fab.fa-github
             | Github
-      #scroll-down
-        i.fas.fa-angle-down.scroll-down-effects
       script.
         (() => {
-          const imgs = ['/img/bg1.jpg', '/img/bg2.jpg', '/img/bg3.jpg', '/img/bg4.jpg']
-
-          const setRandomHeaderBg = () => {
+          const setHeaderBg = () => {
             const header = document.getElementById('page-header')
             if (!header) return
-            const url = imgs[Math.floor(Math.random() * imgs.length)]
+            const url = '/img/bg1.jpg'
             header.style.backgroundImage = `url(${url})`
             header.style.backgroundPosition = 'center'
             header.style.backgroundSize = 'cover'
             header.style.backgroundRepeat = 'no-repeat'
           }
 
-          document.addEventListener('pjax:complete', setRandomHeaderBg)
-          document.addEventListener('DOMContentLoaded', setRandomHeaderBg)
+          document.addEventListener('pjax:complete', setHeaderBg)
+          document.addEventListener('DOMContentLoaded', setHeaderBg)
         })()
     else
       #page-site-info
